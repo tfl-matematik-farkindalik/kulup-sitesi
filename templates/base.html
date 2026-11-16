@@ -13,6 +13,8 @@
       <a class="site-adi" href="{{ get_url(path='@/_index.md') }}">{{ config.title }}</a>
       <nav>
         <a href="{{ get_url(path='@/_index.md') }}" {% if simdiki == "/" %}class="aktif"{% endif %}>Ana Sayfa</a>
+        <a href="{{ get_url(path='@/duyurular/_index.md') }}"
+           {% if "/duyurular/" in current_path | default(value="") %}class="aktif"{% endif %}>Duyurular</a>
         <a href="{{ get_url(path='@/hakkinda.md') }}" {% if simdiki == "/hakkinda/" %}class="aktif"{% endif %}>Hakkında</a>
       </nav>
     </div>

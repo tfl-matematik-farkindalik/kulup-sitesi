@@ -1,4 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 {{ section.content | safe }}
+
+{% set duyurular = get_section(path="duyurular/_index.md") %}
+{% if duyurular.pages %}
+<section>
+  <h2>Son Duyurular</h2>
+  {% for page in duyurular.pages %}{% if loop.index <= 3 %}
+    <article>
+      <h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
+    </article>
+  {% endif %}{% endfor %}
+</section>
+{% endif %}
 {% endblock %}
