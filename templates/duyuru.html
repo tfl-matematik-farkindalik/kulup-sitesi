@@ -2,7 +2,7 @@
 {% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 {% block content %}
 <article>
-  <h1>{{ page.title }}</h1>
+  <h1 class="ortala dar">{{ page.title }}</h1>
   <time datetime="{{ page.date }}">{{ page.date | date(format="d MMMM y", locale="tr") }}</time>
   {{ page.content | safe }}
 </article>

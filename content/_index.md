@@ -2,7 +2,7 @@
 title = "Ana Sayfa"
 +++
 
-## Tübitak Fen Lisesi Matematik Farkındalığı Kulübüne Hoş geldiniz! {.ortala .dar}
+## Tübitak Fen Lisesi Matematik Farkındalığı Kulübüne Hoş Geldiniz! {.ortala .dar}
 
 {{ <bosluk boy={0} /> }}
 

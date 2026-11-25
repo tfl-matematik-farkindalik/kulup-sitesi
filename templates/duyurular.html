@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ "Duyurular " }} | {{ config.title }}{% endblock %}
 {% block content %}
-<h1>{{ section.title }}</h1>
+<h1 class="ortala dar">{{ section.title }}</h1>
 {% for page in section.pages %}
   <article>
     <a href="{{ page.permalink | safe }}">{{ page.title }}</a>: <time datetime="{{ page.date }}">{{ page.date | date(format="d MMMM y", locale="tr") }}</time>
