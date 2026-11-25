@@ -2,7 +2,7 @@
 base_url = "https://tfl-matematik-farkindalik.com/"
 
 # Kulübün adı ile ilgili bir başlık koyulabilir.
-title = "Kulüp"
+title = "TFL Matematik Farkındalığı Kulübü"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
